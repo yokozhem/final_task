@@ -23,5 +23,13 @@
                 arr2[arr2.Length - 1] = str;
             }
         }
+      
+        Console.WriteLine("Новый массив:");
+        foreach (string str in arr2)
+        {
+            Console.WriteLine(str);
+        }
 
+
+       
   
