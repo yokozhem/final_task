@@ -13,4 +13,15 @@
         string[] arr = {"hello", "2", "world", ".-)"};
         string[] arr2 = new string[0];
 
-       
+        foreach (string str in arr)
+        {
+            int len = str.Length;
+
+            if (len <= 3)
+            {
+                Array.Resize(ref arr2, arr2.Length + 1);
+                arr2[arr2.Length - 1] = str;
+            }
+        }
+
+  
